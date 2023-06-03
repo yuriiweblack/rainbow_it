@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+  <section class="top">
+   <div class="top__container" style="background-image: url('{{ url_for('static', filename='images/loginbg.jpg') }}');">
+    <div class="container">
+     <h2 class="top__title title">LOG IN</h2>
+     <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+       <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+         Home
+        </a>
+       </li>
+       <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+         Log in
+        </a>
+       </li>
+
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <div class="modal">
+   <div class="container">
+    <div class="modal__links">
+     <a class="modal__link" href="register.html">REGISTER</a>
+     <a class="modal__link modal__link--active" href="login.html">LOGIN</a>
+    </div>
+    <form class="modal__form" action="" method="post" novalidate  autocomplete="off">
+      {{ form.hidden_tag() }}
+     <p class="modal__label">
+      {{ form.username.label }} <br>
+      {{ form.username(size=32) }}
+     </p>
+     <p class="modal__label">
+      {{ form.password.label }} <br>
+      {{ form.password(size=32)}}
+     </p>
+     <p class="modal__label">
+      {{ form.remember_me() }} {{ form.remember_me.label }}
+     </p>
+
+     {{ form.submit() }}
+     <a class="modal__error" href="#">Lost your password?</a>
+    </form>
+   </div>
+  </div>
+
+{% endblock %}

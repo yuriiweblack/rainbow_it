@@ -1,0 +1,145 @@
+.top__container{
+  max-width: 1700px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 120px 0 130px;
+  text-align: center;
+}
+
+.title{
+ text-align: center;
+ font-size: 48px;
+ line-height: 65px;
+ color: #29282d;
+ margin-bottom: 10px;
+}
+
+.breadcrumbs{
+ display: inline-flex;
+ justify-content: center;
+ padding-left: 25px;
+ position: relative;
+ }
+
+.breadcrumbs::before{
+  content: '';
+  position: absolute;
+  background-image: url('../images/icons/home_icon.svg');
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 4px;
+ }
+
+.breadcrumbs__list{
+  display: flex;
+ }
+
+.breadcrumbs__item{
+  color: #727272;
+  padding-right: 45px;
+  position: relative;
+  }
+.breadcrumbs::after{
+   content: '';
+   position: absolute;
+   background-image: url('../images/icons/angle_right.svg');
+   width: 9px;
+   height: 10px;
+   right: 15px;
+   top: 8px;
+  }
+
+.breadcrumbs:last-child{
+   color: #fe3e57;
+}
+
+.breadcrumbs::after{
+    color: #fe3e57;
+}
+
+.breadcrumbs__link{
+  color: inherit;
+ }
+
+.modal{
+ padding-top: 100px;
+ max-width: 570px;
+ margin: 0 auto 115px;
+ }
+
+.modal__links{
+  text-align: center;
+  margin-bottom: 40px;
+ }
+
+.modal__link{
+  font-size: 22px;
+  color: #909090;
+  text-transform: uppercase;
+  margin: 0 30px;
+ }
+.modal__link--active{
+  color: #fe3e57;
+ }
+
+.modal__label{
+  margin-bottom: 30px;
+  display: block;
+ }
+
+.modal__input{
+  display: inline;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  height: 55px;
+  padding: 0 15px;
+  margin-top: 4px;
+
+ }
+
+.modal__btn{
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  text-transform: uppercase;
+  background-color: #29282d;
+  color: #fff;
+  cursor: pointer;
+ }
+
+.modal__error{
+  margin-top: 12px;
+  color: #29282d;
+  display: inline-block;
+ }
+
+.modal__text{
+  margin-bottom: 25px;
+ }
+
+#username, #password{
+  background:red;
+  display: inline;
+  width: 100%;
+  background-color: #f6f6f6;
+  border: none;
+  height: 55px;
+  padding: 0 15px;
+  margin-top: 4px;
+}
+
+#submit{
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  text-transform: uppercase;
+  background-color: #29282d;
+  color: #fff;
+  cursor: pointer;
+}
